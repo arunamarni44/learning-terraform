@@ -1,7 +1,7 @@
 variable "region"{
-    default = "us-east-1"
+    default = "us-east-2"
 }
 
 variable "bucket_name"{
-    default = "its-my-bucket-using-8152"
+    default = "its-my-bucket-using-1234"
 }
