@@ -7,6 +7,15 @@ terraform {
   }
 }
 
+resource "aws_s3_bucket" "b" {
+  bucket = "my-test-bucket-456"
+
+  tags = {
+    Name        = "My-Bucket-b"
+    Environment = "Dev"
+  }
+}
+
 # Configure the AWS Provider
 provider "aws" {
   region = var.region
