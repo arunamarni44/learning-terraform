@@ -6,4 +6,12 @@ resource "aws_s3_bucket" "a" {
     Name        = "My bucket"
     Environment = "Dev"
   }
+resource "aws_s3_bucket" "b" {
+  bucket = "my-test-bucket-456"
+
+  tags = {
+    Name        = "My-Bucket-b"
+    Environment = "Dev"
+  }
+}
 }
